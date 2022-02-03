@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: .3rem;
+}
+body::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background: #000;
+    box-shadow: inset 0 0 6px rgba(1, 5, 17, 0.9);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #2563EB;
+    outline: 1px solid slategray;
+}
+.landing{
+    background-image: url(../img/landbtc.jpg);
+    background-blend-mode: overlay;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.jumbotron-header{
+    background-image: url(../img/landbtc.jpg);
+}
+
+
+.about:nth-child(even){
+    background-image: url(../waves_blob/land.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.about:nth-child(odd){
+    background-image: url(../waves_blob/land.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.wrap-about:nth-child(even) .about:nth-child(odd){
+    background-image: url(../waves_blob/land_up.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.service{
+    background-image: url(../waves_blob/land_up.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.category-heading{
+    background-color: #010511;
+}
+
+.navbar{
+    transition: all 1s ease-in-out;
+}
+.hide{
+    left: -30rem;
+
+}
+.dropdown-toggler{
+
+    transition: transform .5s ease;
+}
+.flip{
+    transform: rotate(180deg);
+}
+.navbar::-webkit-scrollbar {
+    width: .1rem;
+}
+.navbar::-webkit-scrollbar-track {
+    border-radius: 30px;
+    background: #000;
+    box-shadow: inset 0 0 6px rgba(1, 5, 17, 0.9);
+}
+.navbar::-webkit-scrollbar-thumb {
+    background-color: #2563EB;
+    outline: 1px solid slategray;
+}
+.fly-up{
+    top: -30rem;
+    transition: top .5s ease-in-out;
+}
+.disappear{
+    visibility: hidden;
+    transition: visibility .01s linear;
+
+}

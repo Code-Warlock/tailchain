@@ -1,0 +1,111 @@
+/* Make the element pulse (grow large and small slowly) */
+
+    .pulse {
+        animation: pulsate 7s ease-out;
+        animation-iteration-count: infinite;
+        opacity: .5; 
+    }
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 0.1;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+/* Make the element's opacity pulse*/
+/* Usage
+    .myElement {
+        animation: opacityPulse 1s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 0; 
+    }
+*/
+@-webkit-keyframes opacityPulse {
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+}
+
+/* Make the element's background pulse. I call this alertPulse because it is red. You can call it something more generic. */
+/* Usage
+    .myElement {
+        animation: alertPulse 1s ease-out;
+        animation-iteration-count: infinite;
+        opacity: 1; 
+    }
+*/
+@-webkit-keyframes alertPulse {
+    0% {background-color: #9A2727; opacity: 1;}
+    50% {opacity: red; opacity: 0.75; }
+    100% {opacity: #9A2727; opacity: 1;}
+}
+
+
+/* Make the element rotate infinitely. */
+/* 
+Usage
+    .myElement {
+        animation: rotating 3s linear infinite;
+    }
+*/
+.bouncer{
+    animation: bouncing 7s ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: .1;
+}
+.bouncer-2{
+    animation: bouncing-2 7s ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: .1;
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bouncing {
+    from {
+      -ms-transform: translate(200px , 100px);
+      -moz-transform: translate(200px , 100px);
+      -webkit-transform: translate(200px , 100px);
+      -o-transform: translate(200px , 100px);
+      transform: translate(200px , 100px);
+    }
+    to {
+      -ms-transform: translate(400px);
+      -moz-transform: translate(400px);
+      -webkit-transform: translate(400px);
+      -o-transform: translate(400px);
+      transform: translate(400px);
+    }
+  }
+  @keyframes bouncing-2 {
+    from {
+      -ms-transform: translate(200px ,-100px);
+      -moz-transform: translate(200px ,-100px);
+     -webkit-transform: translate(200px ,-100px);
+      -o-transform: translate(200px ,-100px);
+      transform: translate(200px ,-100px);
+    }
+    to {
+      -ms-transform: translate(400 , 200);
+      -moz-transform: translate(400 , 200);
+      -webkit-transform: translate(400 , 200);
+      -o-transform: translate(400 , 200);
+      transform: translate(400 , 200);
+    }
+  }
