@@ -6,6 +6,7 @@ $(document).ready(()=>{
   });
   $('.menu-bar').click(()=>{
     $('.navbar').removeClass('hide');
+    $('.navbar').addClass('animate__animated');
     $('.navbar').addClass('animate__slideInLeft');
     $('.navbar').removeClass('animate__slideOutLeft');
     $('.navbar-toggler').addClass('animate__fadeInUp');

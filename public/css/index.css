@@ -696,6 +696,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.25rem;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -740,8 +748,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 30px;
 }
 
-.h-screen {
-  height: 100vh;
+.h-full {
+  height: 100%;
 }
 
 .h-4 {
@@ -758,10 +766,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-52 {
   height: 13rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-32 {
@@ -800,10 +804,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 0.75rem;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -822,6 +822,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .transform {
@@ -870,6 +874,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
 }
 
 .overflow-hidden {
