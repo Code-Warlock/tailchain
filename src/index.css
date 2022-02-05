@@ -17,39 +17,39 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategray;
 }
 .landing{
-    background-image: url(../public/img/landbtc.jpg);
+    background-image: url(../img/landbtc.jpg);
     background-blend-mode: overlay;
     background-size: contain;
     background-attachment: fixed;
 }
 .jumbotron-header{
-    background-image: url(../public/img/landbtc.jpg);
+    background-image: url(../img/landbtc.jpg);
 }
 
 
 .about:nth-child(even){
-    background-image: url(../public/waves_blob/land.svg);
+    background-image: url(../waves_blob/land.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
 .about:nth-child(odd){
-    background-image: url(../public/waves_blob/land.svg);
+    background-image: url(../waves_blob/land.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
 .wrap-about:nth-child(even) .about:nth-child(odd){
-    background-image: url(../public/waves_blob/land_up.svg);
+    background-image: url(../waves_blob/land_up.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
 .service{
-    background-image: url(../public/waves_blob/land_up.svg);
+    background-image: url(../waves_blob/land_up.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
