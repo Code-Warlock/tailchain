@@ -30,6 +30,9 @@ $(document).ready(()=>{
     setTimeout(()=>{
       $('.navbar-toggler').removeClass('fly-up');
       $('.navbar-toggler').removeClass('disappear');
+      $('.navbar').addClass('hide');
+
+      $('.navbar').removeClass('animate__animated');
     } , 500);
     
     $('.menu-bar').css('visibility' , 'visible');
@@ -45,6 +48,8 @@ $(document).ready(()=>{
     setTimeout(()=>{
       $('.navbar-toggler').removeClass('fly-up');
       $('.navbar-toggler').removeClass('disappear');
+      $('.navbar').addClass('hide');
+      $('.navbar').removeClass('animate__animated');
     } , 500);
     $('.navbar-toggler').addClass('animate__fadeInDown');
     $('.overlay').addClass('hidden');
