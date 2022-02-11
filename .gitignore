@@ -1,4 +1,7 @@
 node_modules/
 .vscode/
-*.json  
-tailwind*
+src/
+package-lock.json
+package.json
+tailwind-custom.config.js
+tailwind.config.js
