@@ -17,13 +17,14 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategray;
 }
 .landing{
-    background-image: url(../img/landbtc.jpg);
+    background-image: url(../img/glow.jpg);
     background-blend-mode: overlay;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .jumbotron-header{
-    background-image: url(../img/landbtc.jpg);
+    /* background-image: url(../img/landbtc.jpg); */
 }
 
 
@@ -49,14 +50,14 @@ body::-webkit-scrollbar-thumb {
     background-blend-mode: overlay;
 }
 .service{
-    background-image: url(../waves_blob/land_up.svg);
+    /* background-image: url(../waves_blob/land_up.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay;
+    background-blend-mode: overlay; */
 }
 .category-heading{
-    background-color: #010511;
+    background-color: #090430;
 }
 
 .navbar{
