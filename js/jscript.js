@@ -57,4 +57,5 @@ $(document).ready(()=>{
     $('.overlay').addClass('transition');
     $('.overlay').addClass('opacity-100');
   });
+
 });
