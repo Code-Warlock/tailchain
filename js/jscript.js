@@ -75,7 +75,6 @@ $(document).ready(()=>{
       $('.overlay').addClass('opacity-0');
       $('.overlay').addClass('transition');
       $('.overlay').addClass('opacity-100');
-
     }
   })
 
