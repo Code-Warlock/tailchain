@@ -401,6 +401,7 @@ embed,
 object {
   display: block;
   /* 1 */
+  vertical-align: middle;
   /* 2 */
 }
 
@@ -561,28 +562,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: auto;
 }
 
-.top-\[13rem\] {
-  top: 13rem;
-}
-
-.top-\[5rem\] {
-  top: 5rem;
-}
-
-.top-\[12rem\] {
-  top: 12rem;
-}
-
 .z-20 {
   z-index: 20;
 }
 
 .z-10 {
   z-index: 10;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .-m-4 {
@@ -608,9 +593,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .mb-1 {
@@ -679,9 +661,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .ml-1 {
@@ -780,23 +759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 8rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-
-.h-\[40\%\] {
-  height: 40%;
-}
-
-.h-\[35\%\] {
-  height: 35%;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -815,10 +777,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-4 {
@@ -845,24 +803,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
-.w-\[20rem\] {
-  width: 20rem;
-}
-
-.w-\[5rem\] {
-  width: 5rem;
-}
-
 .w-\[40\%\] {
   width: 40%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .transform {
@@ -911,10 +853,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .overflow-hidden {
@@ -976,16 +914,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-purple-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(147 51 234 / var(--tw-border-opacity));
-}
-
-.border-purple-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 33 168 / var(--tw-border-opacity));
-}
-
 .border-\[\#090430\] {
   --tw-border-opacity: 1;
   border-color: rgb(9 4 48 / var(--tw-border-opacity));
@@ -1029,22 +957,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
 }
 
-.bg-purple-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
 
 .stroke-current {
   stroke: currentColor;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
@@ -1073,12 +991,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0px;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-10 {
@@ -1307,16 +1225,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
-.text-\[white\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#090430\] {
-  --tw-text-opacity: 1;
-  color: rgb(9 4 48 / var(--tw-text-opacity));
-}
-
 .text-opacity-90 {
   --tw-text-opacity: 0.9;
 }
@@ -1338,10 +1246,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-5 {
-  opacity: 0.05;
 }
 
 .opacity-100 {
@@ -1429,6 +1333,10 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
 }
 
+.jumbotron-header{
+  /* background-image: url(../img/landbtc.jpg); */
+}
+
 .about:nth-child(even){
   background-image: url(../waves_blob/land.svg);
   background-repeat: no-repeat;
@@ -1453,6 +1361,13 @@ body::-webkit-scrollbar-thumb {
   background-blend-mode: overlay;
 }
 
+.service{
+  /* background-image: url(../waves_blob/land_up.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; */
+}
 
 .category-heading{
   background-color: #090430;
@@ -1609,11 +1524,6 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(107 33 168 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-purple-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#090430\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(9 4 48 / var(--tw-bg-opacity));
@@ -1660,10 +1570,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 640px) {
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
   .sm\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -1729,28 +1635,8 @@ body::-webkit-scrollbar-thumb {
     margin-top: -5rem;
   }
 
-  .md\:mt-24 {
-    margin-top: 6rem;
-  }
-
   .md\:ml-0 {
     margin-left: 0px;
-  }
-
-  .md\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
-  .md\:mb-\[9\.8rem\] {
-    margin-bottom: 9.8rem;
-  }
-
-  .md\:mb-\[4\.8rem\] {
-    margin-bottom: 4.8rem;
-  }
-
-  .md\:mb-\[6\.6rem\] {
-    margin-bottom: 6.6rem;
   }
 
   .md\:ml-auto {
@@ -1777,10 +1663,6 @@ body::-webkit-scrollbar-thumb {
     height: 60%;
   }
 
-  .md\:h-36 {
-    height: 9rem;
-  }
-
   .md\:w-60 {
     width: 15rem;
   }
@@ -1803,14 +1685,6 @@ body::-webkit-scrollbar-thumb {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
-  .md\:w-2 {
-    width: 0.5rem;
   }
 
   .md\:flex-row {
@@ -1855,18 +1729,6 @@ body::-webkit-scrollbar-thumb {
     top: 9rem;
   }
 
-  .lg\:left-\[32rem\] {
-    left: 32rem;
-  }
-
-  .lg\:left-\[10rem\] {
-    left: 10rem;
-  }
-
-  .lg\:left-\[40rem\] {
-    left: 40rem;
-  }
-
   .lg\:ml-60 {
     margin-left: 15rem;
   }
@@ -1883,32 +1745,16 @@ body::-webkit-scrollbar-thumb {
     margin-top: -11rem;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:mb-4 {
     margin-bottom: 1rem;
   }
 
-  .lg\:mb-\[6\.5rem\] {
-    margin-bottom: 6.5rem;
-  }
-
-  .lg\:mb-\[5\.3rem\] {
-    margin-bottom: 5.3rem;
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
-  .lg\:h-48 {
-    height: 12rem;
   }
 
   .lg\:w-60 {
