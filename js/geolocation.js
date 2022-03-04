@@ -2,7 +2,7 @@ const findUserLocation = ()=>{
   const success = position=>{
   let latitude = position.coords.latitude
   let longitude = position.coords.longitude
-  console.log(latitude + "\n" + longitude)
+  // console.log(latitude + "\n" + longitude)
   const FOREXNAV = document.querySelector("a[href='#forex']");
   const BTCNAV = document.querySelector("a[href='#btc']");
   const DESCTEXT = document.querySelector("#desc");
@@ -28,7 +28,7 @@ const findUserLocation = ()=>{
     DESCTEXTVALUE = DESCTEXT.innerHTML;
     items.forEach(item => {
       if(item.querySelector("div .countries").textContent.includes(`${data.countryName}`)){
-          console.log(item)
+          // console.log(item)
       }
       else{
         item.style.cssText = "display:none"
@@ -53,7 +53,7 @@ const findUserLocation = ()=>{
       document.querySelector("#items2-wrapper").innerHTML = `<p class="leading-relaxed text-base text-center lg:mb-4 mb-10 lg:mt-0 mt-12" id="desc">There's no offer on this category available for your country!</p>`
     }
 
-    console.log(data.countryName + " " + DESCTEXTVALUE)
+    // console.log(data.countryName + " " + DESCTEXTVALUE)
   })
 
   }
